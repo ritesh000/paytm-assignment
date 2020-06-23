@@ -1,0 +1,69 @@
+2) Test Scenarios:
+Write all the possible test scenarios “To apply Promo code”. Promo code will give a
+discount of 30% (on the total billing amount) to the new user once applied on a
+minimum transaction of Rs. 1000 and above. Below are some specifications for the
+promo code:
+Promo: NEW30
+Character limit: 7
+Maximum cap: Rs. 300
+* Make any possible assumptions if required. Do mention those assumptions (if
+made any) before writing the test scenarios.
+** Write all positive, negative and edge case scenarios.
+
+
+
+1.user is a login application.
+2.add items in the cart and cart amount value min 1000.
+3.apply promo code  "NEW30"(only new user first order)(code min 7 characters and all capital latter new30 mean user new and 30 mean 30% off  )
+
+
+2.
+1.user login application.
+2.add items in the cart and cart amount value 700.
+3.apply promo code  "NEW30" not applicable (only new user first order)(code min 7 characters and all capital latter new30 mean user new and 30 mean 30% off  ).
+
+
+
+3.
+1.user login application.
+2.add items in the cart and cart amount value 1000.
+3.apply promo code  "FIRT30" invalid code .(code min 7 characters ).
+
+
+4.
+1.user login application.
+2.without add item apply code "NEW30". 
+3.show massage according to application.
+
+5.
+1.user login application. (new user)
+2.add item in cart.
+3.select payment mode showing message apply any promo code.
+
+6.
+1.user login application. (new user)
+2.add item in the cart and apply code NEW30 code teams(all and some product not applicable this code )
+
+7.
+1.user login application.
+2.add item in the cart and cart amount value 1000 above.
+3.apply promo code  "NEW30" not applicable depends on payment mode like cod mode not applicable.
+
+8.
+1.user is a login application.
+2.add item in the cart and cart amount value min 1000 and 1000 above.
+3.apply other promo code and after cancel and next order apply "NEW30" not applicable because 2nd order 
+
+9.
+1.user is a login application.
+2.add item in the cart and cart amount value min 1000 and 1000 above.
+3.apply "NEW30" and order return and new order apply code "NEW30"not applicable because only first-order applicable.
+
+10
+1.without login application.
+2.user add items in cart show message first login user.
+
+
+
+
+

@@ -1,0 +1,16 @@
+The data type and constraints for Employee table is:
+EmpID: Int (Primary key)
+EmpName: char
+Date_of_birth: Date
+The data type and constraints for Salary table is:
+EmpID: Int (Primary key) (Foreign key)
+Salary: int
+a> Write an SQL query to find nth largest salary along with employee name.
+
+select   s.EmpId,emp.EmpName ,max(salary)  from Employee emp JOIN salary s on emp.EmpID =s.EmpId;
+
+
+b> Write a query to update salary of employees to 5000 whose age is 30+
+
+Update Salary s set s.salary=5000 where s.EmpId in (select e.EmpID from Employee e where e.Date_of_Brith<'1990-01-01'
+And e.EmpID=s.EmpId);
